@@ -1,39 +1,83 @@
 <!DOCTYPE html>
-<html lang="fr">
-    <head>
-        <title> Saveurs et recettes </title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <header>
-            <DIV>SAVEURS ET RECETTES</DIV>
-            <nav>
-                <ul>
-                    <li><a href="">Accueil</a></li>
-                    <li><a href="">A propos</a> </li>
-                    <li><a href="">Contact</a></li>
-                </ul>
-            </nav>
-            <div><a href="">Voir plus</a></div>
-        </header> 
-        <main>
-            <section>
-                <h1>SAVEURS ET RECETTES</h1>
-                <p>Explorez la richesse des cuisines du monde,depuis chez vous.</p>
-                <a href=""> By Beloved Madzwa</a>
-            </section>
-        </main>
-        
-        <section id="Decouvrez">
-            <h3>Petits déjeuners</h3>
-    
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Saveurs et Recettes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="" alt="logo" class="logo">
+        <h1>Saveurs et Recettes</h1>  
+    </header>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="#apropos">A propos</a>
+            <a href="#" onclick="openMenu()">Voir plus</a>
+        </nav>
+    <div id="sideMenu" class="side-menu">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
+        <input type="text" placeholder="Rechercher une recette..." class="search-bar">
+        <a href="index.html">Accueil</a>
+        <a href="a-propos.html">A propos</a>
+        <a href="vocabulaire.html">Vocabulaire</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <main>
+
+        <section class="categories">
+            <em><h2>Nos categories</h2></em>
+            <div class="categorie">
+                <a href="pages/petitdej.html" class="categorie-lien">
+                    <img src="c:\Users\belov\Downloads\petitdej.jpeg" alt="petitdej">
+                    <span><u>Petits Dejeuners</u></span>
+                </a>
+                <a href="pages/amuse-gueles.html" class="categorie-lien">
+                    <img src="c:\Users\belov\Downloads\amusebouche.jpeg" alt="amuse-gueles"> 
+                    <span><u>Amuse-gueles</u></span>
+                </a>
+                <a href="pages/desserts.html" class="categorie-lien">
+                    <img src="c:\Users\belov\Downloads\dessert.jpeg" alt="desserts" >
+                    <span><u>Desserts</u></span>
+                </a>
+                <a href="pages/plats.html" class="categorie-lien">
+                    <img src="c:\Users\belov\Downloads\platprincipal.jpeg" alt="plats">
+                    <span><u>Plats principaux</u></span>
+                </a>
+                <a href="pages/boissons-smoothies.html" class="categorie-lien">
+                    <img src="c:\Users\belov\Downloads\boissonersmoothie2.jpeg" alt="boissons et smoothies">
+                    <span><u>Boissons et smoothies</u></span>
+                </a>
+                <a href="pages/sauces-accompagnements.html" class="categorie-lien">
+                    <img src="c:\Users\belov\Downloads\saucesetacompagnements.jpeg" alt="sauces et accompagnements">
+                    <span><u>Sauces et accompagnements</u></span>
+                </a>
+                <a href="pages/soupes-potages.html" class="categorie-lien">
+                    <img src="c:\Users\belov\Downloads\soupesetpotages.jpeg" alt="soupes et potages">
+                    <span><u>Soupes et potages</u></span>
+                </a>
+                <a href="pages/snacks-streetfood.html" class="categorie-lien">
+                    <img src="c:\Users\belov\Downloads\snacksetstreetfood.jpeg" alt="snacks-streetfood">
+                    <span><u>Snacks et Street food</u></span>
+                </a>
+                <a href="pages/boulangerie-viennoiseries.html" class="categorie-lien">
+                    <img src="c:\Users\belov\Downloads\boulangerieetvienoiseries.jpeg" alt="boulangerie et viennoiseries">
+                    <span><u>Boulangerie et Viennoiseries</u></span>
+                </a>
+                <a href="pages/oeufs-salades.html" class="categorie-lien">
+                    <img src="c:\Users\belov\Downloads\oeufsetsalades.jpeg" alt="oeufs et salades">
+                    <span><u>Oeufs et Salades</u></span>
+            </div>
         </section>
-
-    </body>
-
-
-
-
-
-
+    </main>
+    <script>
+        function ouvrirMenu() {
+            document.getElementById("sideMenu").style.width = "250px";
+        }
+        function fermerMenu() {
+            document.getElementById("sideMenu").style.width = "0";
+        }
+    </script>
+</body>
 </html>
