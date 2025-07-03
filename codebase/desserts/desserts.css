@@ -1,0 +1,21 @@
+h1{
+    background-color:saddlebrown;
+    color: burlywood;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: larger;
+    text-align: center;
+    padding: 50px;
+    border-radius: 20px;
+}
+body{
+    background-color: burlywood;
+    line-height: 10px;
+}
+li{
+    line-height: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+    margin: 10PX;
+    font-weight: 50;
+    text-align: left;
+}
