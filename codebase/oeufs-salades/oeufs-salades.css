@@ -1,6 +1,6 @@
 h1{
-    background-color:saddlebrown;
-    color: burlywood;
+    background-color:#f8dec8;
+    color: #7b3e19;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: larger;
     text-align: center;
@@ -8,14 +8,33 @@ h1{
     border-radius: 20px;
 }
 body{
-    background-color: burlywood;
+    background-color:#fff8f5;
     line-height: 10px;
 }
 li{
-    line-height: 10px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: large;
+    line-height: 30px;
     margin: 10PX;
     font-weight: 50;
-    text-align: left;
+    text-align: center; 
+    background:#fff3ea ;
+    color:#7b3e19;
+    border-radius: 15px;
+    padding: 20px;
+    list-style: none;
+    
+
+}
+li:hover{
+    background: linear-gradient(90deg,#eedacb 60%,#eec3b1 100%);
+    transform: translateY(-2px) scale(1.04);
+    box-shadow: 0 4px 6px black;
+}
+li a {
+    color: #7b3e19;
+    font-weight: 900;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    
+
 }
