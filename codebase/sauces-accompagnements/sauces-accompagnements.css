@@ -1,23 +1,25 @@
 h1{
-    background-color:#f8dec8;
-    color: #7b3e19;
+    background-color:#e6f8ca;
+    color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: larger;
+    font-size:2rem;
     text-align: center;
     padding: 50px;
-    border-radius: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px;
+
 }
 body{
-    background-color:#fff8f5;
+    background-color:#bfc9b1;
     line-height: 10px;
 }
 li{
     line-height: 30px;
-    margin: 10PX;
+    margin: 10px;
     font-weight: 50;
     text-align: center; 
-    background:#fff3ea ;
-    color:#7b3e19;
+    background-color:#b3c49b;
+    color:rgb(163,163,93);
     border-radius: 15px;
     padding: 20px;
     list-style: none;
@@ -25,12 +27,13 @@ li{
 
 }
 li:hover{
-    background: linear-gradient(90deg,#eedacb 60%,#eec3b1 100%);
+    background: linear-gradient(90deg,#d6ecb7 60%,#e6f8ca 100%);
     transform: translateY(-2px) scale(1.04);
-    box-shadow: 0 4px 6px black;
+    box-shadow: 0 5px 10px;
+    
 }
 li a {
-    color: #7b3e19;
+    color:white;
     font-weight: 900;
     font-size: larger;
     font-family: Arial, Helvetica, sans-serif;

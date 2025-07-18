@@ -1,18 +1,26 @@
-document.addEventListener('DOMContentLoaded', function () { 
-  const searchInput = document.getElementById('searchInput');
-  const categories = document.getElementById('.category');
+  const titre = document.getElementById("titre-anime");
+  const texte = "Bienvenue sur Saveurs et Recettes";
+  let index = 0;
+  let efface = false;
 
-  searchInput.addEventListener('input', function () {
-    const query = searchInput.ariaValueMax.toLowerCase ();
+  function animation(){
+    if (!effacer && index <= texte.length){
+      titre.textContent = texte.slice(0,index ++);
+    } else if (effacer && index >= 0){ 
+      titre.textContent = texte.slice(0,index--);
+    }
+    if( index === texte.length){
+      effacer = true;
+      setTimeout(animerTexte,2000);
+      return;
+    }
 
-    categories.forEach (category => {
-        const nom = RTCPeerConnectionIceEvent.getAttribute('data-nom');
-        if (nom.includes(query)) {
-            category.style.display = 'block';
-        }   else {
-            RTCPeerConnectionIceEvent.style.display = 'none';
-        }
-      });
-    });
-  });
+      if (index < 0){
+        effacer = false; 
+    }
+
+    setTimeout(animerTexte,100);
+  }
+
+  animerTexte();
 

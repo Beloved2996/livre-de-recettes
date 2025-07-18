@@ -1,5 +1,5 @@
 body{
-    background-color: beige;
+    background-color: #8caf5c;
     color: #333;
     font-family: 'Segoe UI', sans-serif;
     margin: 0;
@@ -9,37 +9,34 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 20px 30px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    background-color:olive;
+    box-shadow: 0 5px 5px ;
+    background-color:#5a763f;
 }
 .logo{
-    font-size: 24px;
+    font-size: 40px;
     font-weight: bold;
-    color: #7b3e19;
+    color: #f5f1e8;
+
 }
 .nav-links a {
-    color: #7b3e19;
+    color: #f5f1e8;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 700;
     margin-left: 25px;
     list-style: none;
 }
-.burger{
-    display: block;
-    font-size:26px;
-    cursor: pointer;
-    color: #7b3e19;
-}
 .categories{
-    padding: 40px 20px;
+    padding: 100px;
     background-color: #fff8f5;
     text-align: center;
 }
-.categories h2{
+h2{
     font-size: 30px;
     margin-bottom: 30px;
-    color: #5c2d13;
+    color: #fff8f5;
+    text-align: center;
 }
+
 .categories-container {
     display: flex;
     flex-wrap: wrap;
@@ -47,11 +44,11 @@ header{
     gap: 20px;
 }
 .category{
-    width: 250px;
-    color:inherit;
-    background-color: white;
+    width: 230px;
+    color:white;
+    background-color:#afa27e67;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 10px;
     overflow: hidden;
     text-decoration: none;
     transition: transorm 0.3s ease;
@@ -62,17 +59,27 @@ header{
 }
 .category img {
     width: 100%;
-    height: 160px;
+    height: 200px;
     object-fit: cover;
 }
 .category h3{
-    margin: 15px 10px 5px;
-    color: #7b3e19;
+    margin: 10px 15px;
+    color: #76885c;
+    text-align: center;
 }
 .category p {
-    margin: 0 10px 15px;
+    margin: 10px 15px;
     font-size:14px;
 
+}
+h1 {
+    font-family:'Georgia', serif;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 30px;
+    color:#7b3f00;
+    letter-spacing: 2px;
+    min-height: 60px;
 }
 /*===Responsive===*/
 @media (max-width:768px ) {
